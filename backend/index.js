@@ -8,13 +8,11 @@ const socket = require("socket.io");
 require("dotenv").config();
 
 // Middleware setup
-app.use(cors(
-  {
-    origin: ["https://quasar-chat-coral.vercel.app"],
-    methods: ["POST", "GET"],
-    credentials: true
-  }
-));
+app.use(cors({
+  origin: "https://quasar-chat-coral.vercel.app",
+  methods: ["POST", "GET"],
+  credentials: true,
+}));
 app.use(express.json());
 
 // Database connection setup
@@ -42,7 +40,7 @@ const server = app.listen(process.env.PORT, () =>
 // Socket.io setup
 const io = socket(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://quasar-chat-coral.vercel.app",
     credentials: true,
   },
 });
