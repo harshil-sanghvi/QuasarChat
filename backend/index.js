@@ -10,7 +10,7 @@ require("dotenv").config();
 // Middleware setup
 app.use(cors(
   {
-    origin: ["https://quasar-chat-backend.vercel.app"],
+    origin: ["https://quasar-chat-coral.vercel.app/"],
     methods: ["POST", "GET"],
     credentials: true
   }
