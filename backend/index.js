@@ -8,7 +8,13 @@ const socket = require("socket.io");
 require("dotenv").config();
 
 // Middleware setup
-app.use(cors());
+app.use(cors(
+  {
+    origin: ["https://quasar-chat-backend.vercel.app"],
+    methods: ["POST", "GET"],
+    credentials: true
+  }
+));
 app.use(express.json());
 
 // Database connection setup
