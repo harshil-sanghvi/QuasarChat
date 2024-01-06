@@ -23,7 +23,6 @@ QuasarChat is a real-time chat application that allows users to communicate with
   - Express
   - MongoDB (or your preferred database)
   - Socket.io for real-time communication
-  - JWT for authentication
 
 ## Prerequisites
 
@@ -64,6 +63,24 @@ Before you begin, ensure you have met the following requirements:
 
 5. Open your browser and go to http://localhost:PORT to use QuasarChat.
 
+## Screenshots
+
+### Login Page
+
+![Login Page](screenshots/Login.png)
+
+### Register Page
+
+![Register Page](screenshots/Register.png)
+
+### Avatar Selection Page
+
+![Avatar Selection Page](screenshots/Avatar.png)
+
+### Chat Welcome Page
+
+![Chat Welcome Page](screenshots/Chat.png)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -79,5 +96,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you have any questions or suggestions, feel free to contact me at harshil1708@gmail.com.
 
 Happy chatting!
-
-
