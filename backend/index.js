@@ -40,7 +40,7 @@ const server = app.listen(process.env.PORT, () =>
 // Socket.io setup
 const io = socket(server, {
   cors: {
-    origin: "https://quasar-chat-coral.vercel.app",
+    origin: "*",
     methods: ["POST", "GET"],
     credentials: true,
   },
