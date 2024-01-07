@@ -88,8 +88,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 - Thanks to [Kishan Sheth](https://github.com/koolkishan/) for wonderful resources that helped me building this project.
-- Thanks to [Socket.io](https://socket.io/) for providing real-time communication support.
-- Emoji icons provided by [EmojiOne](https://www.emojione.com/).
 
 ## Contact
 
