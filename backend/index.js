@@ -8,15 +8,15 @@ const messageRoutes = require("./routes/messages");
 const socket = require("socket.io");
 require("dotenv").config();
 
-// Middleware setup
-// app.use(cors({
-//   origin: "https://quasar-chat-coral.vercel.app",
-//   methods: ["POST", "GET"],
-//   credentials: true,
-// }));
-
 const app = express();
 app.use(express.json());
+
+// Middleware setup
+app.use(cors({
+  origin: "*",
+  methods: ["POST", "GET"],
+  credentials: true,
+}));
 
 // Database connection setup
 mongoose
